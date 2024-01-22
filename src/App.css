@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+main {
+  background-color: #F5F5F5;
+  height: fit-content;
+  max-width: 800px;
+  border-radius: 5px;
+  padding: 38px;
+  display: flex;
+  margin: 50px auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+
+  margin-bottom: 22px;
+}
+.dice-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice {
+  cursor: pointer;
+  caret-color: transparent;
+  padding: 8px;
+  width: 104px;
+  height: 104px;
+  border-radius: 10%;
+  margin-right : 10px;
+}
+.dot{
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color:black;
+}
+
+.dice-2{
+  display: flex ;
+  justify-content: space-between;
+}
+
+.dice-2 .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.dice-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dice-3 .dot:nth-of-type(1) {
+  align-self :flex-end;
+}
+
+.dice-3 .dot:nth-of-type(2) {
+  align-self :center;
+}
+
+
+.dice-4 , .dice-6, .dice-5{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dice-4 .column , .dice-6 .column, .dice-5 .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dice-5 .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+.roll-dice {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035FF;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Karla', sans-serif;
+  cursor: pointer;
+}
+
+.roll-dice:focus {
+  outline: none;
+}
+
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
